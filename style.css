@@ -1,0 +1,117 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 5%;
+    position: absolute;
+    z-index: 1000;
+    width: 80%;
+}
+
+h1{
+    font-size: 40px;
+}
+
+header nav {
+    display: flex;
+    gap:3px;
+    width: 80%;
+}
+
+header nav a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 99px;
+    transition: 0.45s;
+    color: gray;
+    width: 100%;
+}
+
+header nav a.active{
+    background: red;
+}
+
+header nav a:hover{
+    background: green;
+}
+
+header nav:hover > a:not(:hover){
+    background: none;
+}
+
+.Home{
+    display: flex;
+    height: 100dvh;
+    background:linear-gradient(to top,grey 30%,black);
+    position: relative;
+    overflow: hidden;
+    margin-bottom:0;
+}
+
+.Home img {
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.Home .title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: black,0.5;
+    font-size: 80px;
+    text-shadow: 0px 0px 5px rgba(0,0,0,.25);
+    filter: grayscale(100%);
+    transition-duration:.3s;
+}
+.Home .title:hover{
+    filter:grayscale(0%);
+    
+}
+
+.Home .curt1{
+    height: 100%;
+    float: left;
+    transition-duration: .3s;
+}
+
+.Home .curt2{
+    height: 100%;
+    float: right;
+    transition-duration: .3s;
+}
+
+.seat1{
+    margin-bottom: 100px;
+    transition-duration: .3s;
+}
+
+.Home .buk1{
+    z-index: 100000;
+}
+.about{
+    margin-top:0;
+}
+.about p{
+    padding: 50px;
+    color: white;
+    position: relative;
+    z-index: 999;
+}
+
+.about h1{
+    font-size: 40px;
+}
+
+.buk2{
+    margin-top:0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index:998;
+}
